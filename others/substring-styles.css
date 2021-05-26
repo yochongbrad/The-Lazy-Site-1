@@ -1,0 +1,62 @@
+/* Base Styles --------------------*/
+*   {
+    box-sizing: border-box;
+}
+body    {
+    width: 50%;
+    padding: 0.75em 0 5em;
+    font-size: 1em;
+    font-family: 'Trebuchet MS', sans-serif;
+    line-height: 1.5;
+    color: #384047;
+    margin: 2em auto;
+}
+div {
+    width: 70%;
+    max-width: 670px;
+    margin: auto;
+}
+ul  {
+    list-style: none;
+    padding: 0;
+}
+li  {
+    margin-bottom: 0.9em;
+}
+a   {
+    color: #4183c4;
+}
+
+/* Substring Matching Attribute Selectors ---------- */
+a[href^="http://"]  {       /* ^ to target the beginning of the value */
+    color: #52bab3;
+    text-decoration: none;
+}
+
+a[href$=".pdf"] {       /* $ to target the end of the value */
+    background-image: url(../images/UMARU8.PNG);
+}
+
+a[href$=".png"] {
+    background-image: url(../images/Background.png);
+}
+
+a[href$=".zip"] {
+    background-image: url(../images/EBINA0.JPG);
+}
+
+a[href*="downloads"]    {       /* * to target any attribute contains the specific word */
+    background-repeat: no-repeat;
+    background-size: 18px 18px;
+    padding-left: 25px;
+}
+
+img[src*="images"]  {
+    margin: 4px;
+    border: solid 2px;
+    height: 6em;
+}
+
+img[src*="11"]  {
+    border: solid 2px firebrick;
+}
